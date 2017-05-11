@@ -1,0 +1,24 @@
+<launch>
+  <node name="forward_narrow_pgr" pkg="point_gray_camera" type="pgr_camera_node" respawn="true" output="screen">
+    <param name="expected_width" value="1288"/>
+	<param name="expected_height" value="964"/>
+	<param name="enableAEROI" value="1"/>
+	<param name="AEROI_x_offset" value="10"/>
+    <param name="AEROI_y_offset" value="10"/>
+	<param name="AEROI_width" value="1260"/>
+	<param name="AEROI_height" value="600"/>
+	<param name="serial" value="15508322"/>
+	<param name="flip" value="true"/>
+  </node>
+  <node name="rear_narrow_pgr" pkg="point_gray_camera" type="pgr_camera_node" respawn="true" output="screen">
+    <param name="expected_width" value="1288"/>
+	<param name="expected_height" value="964"/>
+    <param name="enableAEROI" value="1"/>
+	<param name="AEROI_x_offset" value="10"/>
+    <param name="AEROI_y_offset" value="10"/>
+	<param name="AEROI_width" value="1260"/>
+	<param name="AEROI_height" value="600"/>
+	<param name="serial" value="16305842"/>
+	<param name="flip" value="false"/>
+  </node>
+</launch>
